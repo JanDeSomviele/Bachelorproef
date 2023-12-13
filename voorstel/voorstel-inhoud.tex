@@ -3,22 +3,12 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+Deze bachelorproef concentreert zich op de ontwikkeling van een aanpasbare pre-flight check oplossing in het domein van softwareontwikkeling. De pre-flight check omvat een reeks processen, tools en praktijken die voorafgaand aan de implementatie van softwaretoepassingen worden toegepast. De specifieke focus ligt op Wolters Kluwer als doelgroep, een vooraanstaand bedrijf in softwareontwikkeling. Het centrale probleem is de huidige afwezigheid van een gestandaardiseerde tool voor het valideren van machines en het controleren van prerequisites voor de softwaretoepassing. De kernvraag van dit onderzoek is dan ook hoe een op maat gemaakte pre-flight check oplossing kan ontwikkeld en geïmplementeerd worden bij Wolters Kluwer, met als doel een verbeterde betrouwbaarheid en soepele implementatie van softwaretoepassingen te waarborgen. De doelstelling van het onderzoek is het ontwikkelen van een oplossing die ontwikkelaars in staat stelt prerequisites te definiëren, aan te passen en ontbrekende prerequisites automatisch te corrigeren. Dit wordt voorgelegd aan de hand van een voorstel en een proof of concept van de beste oplossing.
 
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
 
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+%Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
 
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
-
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
 
 %---------- Stand van zaken ---------------------------------------------------
 
@@ -47,26 +37,26 @@ Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur v
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
+\subsection{Literatuurstudie:}
+In deze fase zal een uitgebreide literatuurstudie worden uitgevoerd om bestaande implementatiepraktijken en automatiseringstools te onderzoeken. Dit zal helpen bij het identificeren van essentiële functies en best practices. De literatuur selectie gebeurd aan de hand van de CRAAP methode. Deze fase duurt 2 weken en heeft als deliverable een literatuurstudierapport.
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+\subsection{Oplossingsontwerp: }
+Voer gesprekken met ontwikkelaars en belanghebbenden om de specifieke behoeften en vereisten voor de pre-flight check-oplossing vast te stellen. Definieer duidelijk de prerequisites die moeten worden gecontroleerd voor een succesvolle implementatie. Tegelijkertijd, ontwerp de oplossing met een focus op aanpasbaarheid, waarbij ontwikkelaars de mogelijkheid hebben om prerequisites te definiëren en de oplossing aan te passen aan specifieke implementatievereisten. Deze fase duurt 2 weken en heeft als deliverable een ontwerp van de oplossing.
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+\subsection{Implementatie:}
+Implementeer de ontworpen oplossing met behulp van geschikte programmeertalen en frameworks. Integreer functionaliteiten voor het valideren van machines, het controleren van prerequisites en het automatisch corrigeren van ontbrekende prerequisites.Deze fase duurt 6 weken en heeft als deliverable functionele software die de checks kan uit voeren, machines kan valideren en ontbrekende prerequisites automatisch kan corrigeren.
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+\subsection{Proof of Concept:}
+Pas de ontwikkelde oplossing toe in een real-world implementatiescenario om de functionaliteit en effectiviteit ervan te valideren. Verzamel kwantitatieve gegevens over de verbetering van de implementatie-efficiëntie en betrouwbaarheid. Verzamel feedback van ontwikkelaars en belanghebbenden over de aanpasbaarheid en bruikbaarheid van de oplossing.Deze fase duurt 4 weken en heeft als deliverable een ontwerp van de proof of concept van de oplossing.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+\subsection{Evaluatie:}
+Schrijf een rapport met een gedetailleerde beschrijving van de ontwikkelde pre-flight check solution, inclusief de methoden, resultaten van de Proof of Concept en evaluatie. Doe een voorstel voor implementatie in de praktijk. Deze fase duurt 1 week en heeft als deliverable een eindrapport en een voorstel voor implementatie in de praktijk.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
-
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+Mijn bachelorproef richt zich op het ontwikkelen van een aanpasbare pre-flight check-oplossing voor Wolters Kluwer. De verwachting is dat deze oplossing aanzienlijke voordelen zal bieden, waaronder efficiëntere implementatieprocessen, aanpasbaarheid aan de unieke omgeving van Wolters Kluwer, automatische correctie van ontbrekende prerequisites, verhoogde betrouwbaarheid van implementaties. De ontwikkelde oplossing en het bijbehorende implementatievoorstel worden geleverd als concrete resultaten, waarbij de praktische toepasbaarheid ervan wordt benadrukt. Het is van belang op te merken dat de verwachtingen dienen als leidraad en het onderzoek openstaat voor andere inzichten die tijdens het proces kunnen ontstaan, met een specifieke focus op het begrijpen van de implementatieprocessen binnen Wolters Kluwer.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
-
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
