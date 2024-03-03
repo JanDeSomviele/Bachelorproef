@@ -3,7 +3,8 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Deze bachelorproef concentreert zich op de ontwikkeling van een aanpasbare pre-flight check oplossing in het domein van softwareontwikkeling. De pre-flight check omvat een reeks processen, tools en praktijken die voorafgaand aan de implementatie van softwaretoepassingen worden toegepast. De specifieke focus ligt op Wolters Kluwer als doelgroep, een vooraanstaand bedrijf in softwareontwikkeling. Het centrale probleem is de huidige afwezigheid van een gestandaardiseerde tool voor het valideren van machines en het controleren van prerequisites voor de softwaretoepassing. De kernvraag van dit onderzoek is dan ook hoe een op maat gemaakte pre-flight check oplossing kan ontwikkeld en geïmplementeerd worden bij Wolters Kluwer, met als doel een verbeterde betrouwbaarheid en soepele implementatie van softwaretoepassingen te waarborgen. De doelstelling van het onderzoek is het ontwikkelen van een oplossing die ontwikkelaars in staat stelt prerequisites te definiëren, aan te passen en ontbrekende prerequisites automatisch te corrigeren. Dit wordt voorgelegd aan de hand van een voorstel en een proof of concept van de beste oplossing.
+Deze bachelorproef richt zich op de ontwikkeling van een intern ontwikkelingsplatform met behulp van Backstage.io. Het platform fungeert als een centrale hub voor diverse ontwikkelingsprocessen en -tools. De focus ligt op het optimaliseren van de ontwikkeling, het stroomlijnen van processen en het verbeteren van de algehele efficiëntie van interne softwareontwikkeling. Als onderdeel van dit onderzoek zal er speciale aandacht worden besteed aan de implementatie van Backstage.io binnen het bedrijf Wolters Kluwer. De kernvraag van dit onderzoek is hoe Backstage.io kan worden geïmplementeerd en aangepast binnen Wolters Kluwer als intern ontwikkelingsplatform om de betrouwbaarheid te verbeteren en de soepele implementatie van softwaretoepassingen te faciliteren. Bovendien zal er een proof of concept worden geleverd om de praktische toepassing en haalbaarheid van Backstage.io binnen de specifieke context van Wolters Kluwer te onderzoeken.
+
 
 
 
@@ -15,32 +16,31 @@ Deze bachelorproef concentreert zich op de ontwikkeling van een aanpasbare pre-f
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-\textcite{Sailer_2019} zegt dat veel kleine taakjes in het deployment process kunnen geautomatiseerd worden, bijvoorbeeld unit-testing, formatting en static analysis. Ook wordt er gesproken over de verschillende tools die er getest werden voor optimalisatie van het software deployment process. \textcite{Wurster_2019} brengt in beeld de verschillende bestaande technologiëen voor het automatiseren van het deployment process. Een van deze is kubernetes die uitbundig wordt onderzocht in \textcite{Poniszewska_Mara_da_2021}. Dit onderzoek varieert van de vorige omdat het specifiek gaat over het automatiseren van de prerequisites van een omgeving voor een succesvolle deployment van de software.
 
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 \subsection{Literatuurstudie:}
-In deze fase zal een uitgebreide literatuurstudie worden uitgevoerd om bestaande implementatiepraktijken en automatiseringstools te onderzoeken. Dit zal helpen bij het identificeren van essentiële functies en best practices. De literatuur selectie gebeurd aan de hand van de CRAAP methode. Deze fase duurt 2 weken en heeft als deliverable een literatuurstudierapport.
+In deze fase wordt een uitgebreide literatuurstudie uitgevoerd volgens de CRAAP-methode om bestaande implementatiepraktijken van Backstage.io als intern ontwikkelingsplatform te onderzoeken. Hierbij wordt specifiek gekeken naar succesvolle aanpassingen en integraties in vergelijkbare organisaties. De duur van deze fase is 2 weken, en het resultaat is een literatuurstudierapport waarin relevante informatie over de implementatie van Backstage.io wordt behandeld.
 
 \subsection{Oplossingsontwerp: }
-Voer gesprekken met ontwikkelaars en belanghebbenden om de specifieke behoeften en vereisten voor de pre-flight check-oplossing vast te stellen. Definieer duidelijk de prerequisites die moeten worden gecontroleerd voor een succesvolle implementatie. Tegelijkertijd, ontwerp de oplossing met een focus op aanpasbaarheid, waarbij ontwikkelaars de mogelijkheid hebben om prerequisites te definiëren en de oplossing aan te passen aan specifieke implementatievereisten. Deze fase duurt 2 weken en heeft als deliverable een ontwerp van de oplossing.
+Voer gesprekken met ontwikkelaars en belanghebbenden om de specifieke behoeften en vereisten voor de implementatie van Backstage.io als intern ontwikkelingsplatform vast te stellen. Definieer duidelijk de functionaliteiten en aanpasbaarheidsmogelijkheden, waarbij ontwikkelaars de flexibiliteit hebben om het platform aan te passen aan specifieke implementatievereisten. Deze fase duurt 2 weken en heeft als deliverable een gedetailleerd ontwerp van de implementatie.
 
 \subsection{Implementatie:}
-Implementeer de ontworpen oplossing met behulp van geschikte programmeertalen en frameworks. Integreer functionaliteiten voor het valideren van machines, het controleren van prerequisites en het automatisch corrigeren van ontbrekende prerequisites.Deze fase duurt 6 weken en heeft als deliverable functionele software die de checks kan uit voeren, machines kan valideren en ontbrekende prerequisites automatisch kan corrigeren.
+Implementeer Backstage.io met aandacht voor de ontworpen functionaliteiten en aanpasbaarheid. Integreer het platform in de bestaande ontwikkelingsprocessen van Wolters Kluwer. Deze fase duurt 6 weken en heeft als deliverable een functioneel intern ontwikkelingsplatform met Backstage.io, klaar voor verdere evaluatie.
 
 \subsection{Proof of Concept:}
-Pas de ontwikkelde oplossing toe in een real-world implementatiescenario om de functionaliteit en effectiviteit ervan te valideren. Verzamel kwantitatieve gegevens over de verbetering van de implementatie-efficiëntie en betrouwbaarheid. Verzamel feedback van ontwikkelaars en belanghebbenden over de aanpasbaarheid en bruikbaarheid van de oplossing.Deze fase duurt 4 weken en heeft als deliverable een ontwerp van de proof of concept van de oplossing.
+Pas het geïmplementeerde Backstage.io-platform toe in een real-world scenario om de functionaliteit, efficiëntie en aanpasbaarheid te valideren binnen de specifieke context van Wolters Kluwer. Verzamel feedback van ontwikkelaars en belanghebbenden over de bruikbaarheid en effectiviteit van het platform. Deze fase duurt 4 weken, waarbij het proof of concept-rapport concrete inzichten en verbeteringsmogelijkheden omvat.
 
 \subsection{Evaluatie:}
-Schrijf een rapport met een gedetailleerde beschrijving van de ontwikkelde pre-flight check solution, inclusief de methoden, resultaten van de Proof of Concept en evaluatie. Doe een voorstel voor implementatie in de praktijk. Deze fase duurt 1 week en heeft als deliverable een eindrapport en een voorstel voor implementatie in de praktijk.
-
+Schrijf een gedetailleerd rapport met een beschrijving van het geïmplementeerde Backstage.io als intern ontwikkelingsplatform. In dit rapport wordt ook de feedback van de proof of concept geanalyseerd en worden aanbevelingen gedaan voor verdere optimalisatie en implementatie in de praktijk. Deze fase duurt 1 week en heeft als deliverable een eindrapport en een implementatievoorstel.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Mijn bachelorproef richt zich op het ontwikkelen van een aanpasbare pre-flight check-oplossing voor Wolters Kluwer. De verwachting is dat deze oplossing aanzienlijke voordelen zal bieden, waaronder efficiëntere implementatieprocessen, aanpasbaarheid aan de unieke omgeving van Wolters Kluwer, automatische correctie van ontbrekende prerequisites, verhoogde betrouwbaarheid van implementaties. De ontwikkelde oplossing en het bijbehorende implementatievoorstel worden geleverd als concrete resultaten, waarbij de praktische toepasbaarheid ervan wordt benadrukt. Het is van belang op te merken dat de verwachtingen dienen als leidraad en het onderzoek openstaat voor andere inzichten die tijdens het proces kunnen ontstaan, met een specifieke focus op het begrijpen van de implementatieprocessen binnen Wolters Kluwer.
+Deze bachelorproef streeft naar de ontwikkeling van een intern ontwikkelingsplatform met behulp van Backstage.io. Verwacht wordt dat dit platform aanzienlijke voordelen zal bieden, waaronder efficiëntere ontwikkelingsprocessen, aanpasbaarheid aan de unieke omgeving van de organisatie, verbeterde algehele efficiëntie van interne softwareontwikkeling, en een gestroomlijnde integratie van diverse ontwikkelingstools.
 
+Het ontwikkelde platform zal concrete resultaten opleveren, waarbij de functionaliteit en voordelen van Backstage.io worden benadrukt in het eindrapport en het implementatievoorstel. Het is belangrijk op te merken dat de verwachtingen als leidraad dienen en dat het onderzoek openstaat voor nieuwe inzichten, met specifieke aandacht voor het begrijpen van ontwikkelingsprocessen binnen de context van het gebruik van Backstage.io.
 
