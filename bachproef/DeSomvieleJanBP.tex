@@ -1,15 +1,10 @@
+% !TeX document-id = {a3c71d17-2800-4397-a78c-05b8b9fb2fe0}
 %===============================================================================
 % LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
 % Meer info op https://github.com/HoGentTIN/latex-hogent-report
 %===============================================================================
 
 \documentclass[dutch,dit,thesis]{hogentreport}
-
-% TODO:
-% - If necessary, replace the option `dit`' with your own department!
-%   Valid entries are dbo, dbt, dgz, dit, dlo, dog, dsa, soa
-% - If you write your thesis in English (remark: only possible after getting
-%   explicit approval!), remove the option "dutch," or replace with "english".
 
 \usepackage{lipsum} % For blind text, can be removed after adding actual content
 
@@ -55,7 +50,7 @@
 \author{Jan De Somviele}
 \supervisor{Mevr. C. Teerlink}
 \cosupervisor{Dhr. J. De Lamper}
-\title[Optionele ondertitel]%
+\title[Optionele ondertitel]
     {'Internal development platform' met behulp van Backstage.io}
 \academicyear{\advance\year by -1 \the\year--\advance\year by 1 \the\year}
 \examperiod{1}
@@ -87,7 +82,7 @@
 %% Render a Dutch outer title page if the main language is English
 \IfLanguageName{english}{%
     %% If necessary, information can be changed here
-    \degreesought{Professionele Bachelor toegepaste informatica}%
+    %\degreesought{Professionele Bachelor toegepaste informatica}%
     \begin{otherlanguage}{dutch}%
        \maketitle%
     \end{otherlanguage}%
@@ -134,17 +129,18 @@
 
 \input{inleiding}
 \input{standvanzaken}
+\input{Backstage}
 \input{methodologie}
 
 % Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
 % vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
 % elke fase in je onderzoek in een apart hoofdstuk bespreken.
-\input{Backstage}
+
 \input{plugins}
 %\input{...}
 %...
 
-\input{Wolters Kluwers}
+\input{Onderzoek1}
 
 \input{conclusie}
 

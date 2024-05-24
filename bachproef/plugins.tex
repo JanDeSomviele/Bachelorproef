@@ -1,46 +1,42 @@
 \chapter{Plugins}
 \label{ch:plugins}
 
-\section{Backstage Plugins}
+\section{Backstage plugins}
 
-Backstage is an open-source platform for building developer portals, created by Spotify. It's designed to streamline software development and infrastructure management by providing a single interface for all tools, services, and documentation. Central to Backstage's flexibility and power is its plugin architecture. Plugins in Backstage extend the platform's functionality, allowing teams to integrate various tools and services seamlessly.
+Backstage is een open-source platform voor het bouwen van ontwikkelaarsplatformen, gemaakt door Spotify. Het is ontworpen om softwareontwikkeling en infrastructuurbeheer te stroomlijnen door een enkele interface te bieden voor alle tools, diensten en documentatie. Centraal in de flexibiliteit en kracht van Backstage staat de plugin-architectuur. Plugins in Backstage zorgen voor de uitbreiding van de functionaliteit van het platform, waardoor teams verschillende tools en diensten naadloos kunnen integreren.
 
-\subsection{Backend/Frontend Plugins}
+\subsection{Backend/Frontend plugins}
 
-Backend plugins extend the capabilities of the Backstage backend. They typically interact with external services, databases, and APIs, performing tasks like data fetching, processing, and management. Backend plugins are usually written in Node.js, leveraging the same technology stack as the main Backstage backend.
+Backend plugins van Backstage communiceren met externe services, databases en API's en voeren taken uit zoals het ophalen, verwerken en beheren van gegevens.Backend plugins worden meestal geschreven in Node.js en maken gebruik van dezelfde technologie stack als Backstage backend.
 
-Frontend plugins are responsible for the user interface and interaction within the Backstage web application. They are built using React and integrate with the main Backstage UI to provide a cohesive user experience. These plugins allow users to visualize data, interact with backend services, and perform various tasks directly from the Backstage portal.
+Frontend plugins zijn verantwoordelijk voor de gebruikersinterface en interactie binnen de Backstage webapplicatie. Ze worden gebouwd met React en integreren met de hoofd-UI van Backstage om een samenhangende gebruikerservaring te bieden. Met deze plugins kunnen gebruikers gegevens visualiseren, communiceren met backend services en verschillende taken direct vanuit het Backstage-portaal uitvoeren.
 
-\subsection{Creating Backstage Plugins}
+\subsection{Het maken van Backstage plugins}
 
-Creating a Backstage plugin involves several steps. First, you need to set up the plugin by using the Backstage CLI to generate a new plugin, which sets up the basic file structure and boilerplate code. Then, define the plugin components by implementing the core functionality. This involves creating React components for the frontend and Node.js modules for the backend. Next, integrate the plugin with Backstage by registering it with the application, configuring routes, navigation, and any required backend services. Finally, ensure the plugin works as expected by writing tests and providing documentation for users.
+Het maken van een Backstage plugin bestaat uit verschillende stappen. Het eerste is het opzetten van een plugin door de Backstage CLI te gebruiken om deze te genereren. Dit zorgt voor de opzet van de basis bestandsstructuur en boilerplate code. Vervolgens definieer je de plugincomponenten door de kernfunctionaliteit te implementeren. Dit houdt in dat je React componenten maakt voor de frontend en Node.js modules voor de backend. Integreer vervolgens de plugin met Backstage door deze te registreren met de applicatie, routes, navigatie en eventueel benodigde backend services te configureren. De laatste stap is het testen van de plugin en het schrijven van de documentatie voor gebruikers.
 
-\subsection{Structure of a Plugin}
+\subsection{Structuur van een plugin}
 
-A typical Backstage plugin has a structured organization. The `src/` directory contains frontend components, hooks, and API interactions. The `backend/` directory holds backend logic, including service definitions and API routes. The `plugin.ts` file serves as the main entry point for the plugin, registering it with Backstage. The `package.json` file lists dependencies and scripts for building and running the plugin. The `README.md` provides documentation and usage instructions.
+Een typische Backstage plugin heeft een gestructureerde organisatie. De `src/` map bevat frontend componenten, hooks en API interacties. De `backend/` map bevat backend logica, inclusief service definities en API routes. Het `plugin.ts` bestand dient als het belangrijkste ingangspunt voor de plugin, want het registreert de plugin met Backstage. Het `package.json` bestand bevat afhankelijkheden en scripts voor het bouwen en uitvoeren van de plugin. De `README.md` bevat documentatie en gebruiksinstructies.
 
 \subsection{Composability System}
 
-The composability system in Backstage allows plugins to be modular and reusable. This system is based on the concept of composable components that can be assembled into complete applications. Key elements include component composition, where plugins expose components that can be reused and combined with other components, promoting reusability and consistency. Extension points are predefined points in the application where plugins can hook into and extend functionality. APIs and services are also provided and consumed by plugins, allowing for interaction between different plugins and services.
+Het composability system in Backstage zorgt ervoor dat plugins modulair en herbruikbaar zijn. Dit systeem is gebaseerd op het concept van samenstelbare componenten die kunnen worden samengevoegd tot complete applicaties. De belangrijkste elementen zijn componentcompositie, waarbij plugins componenten blootleggen die kunnen worden hergebruikt en gecombineerd met andere componenten, wat herbruikbaarheid en consistentie bevordert. Uitbreidingspunten zijn vooraf gedefinieerde punten in de applicatie waarop plugins kunnen inhaken en functionaliteit kunnen uitbreiden. API's en services worden ook aangeboden en gebruikt door plugins, waardoor interactie mogelijk is tussen verschillende plugins en services.
 
-\subsection{Internationalization (Experimental)}
+\subsection{Internationalization}
 
-Internationalization (i18n) in Backstage is essential for global companies that operate in multiple languages and regions. The i18n support in Backstage, although experimental, provides several benefits. By supporting multiple languages, the user interface can be adapted to the preferred language of each user, improving usability and accessibility. This allows teams across different regions to use the same platform without language barriers, fostering better collaboration. Internationalization also enables the adaptation of content and functionality to meet local cultural norms and expectations.
+Internationalisatie (i18n) in Backstage is essentieel voor wereldwijde bedrijven die in meerdere talen en regio's werken. Door meerdere talen te ondersteunen, kan de gebruikersinterface worden aangepast aan de voorkeurstaal van elke gebruiker, wat de bruikbaarheid en toegankelijkheid verbetert. Hierdoor kunnen teams in verschillende regio's hetzelfde platform gebruiken zonder taalbarrières, wat de samenwerking bevordert. 
 
-Implementing i18n in Backstage involves creating localization files that contain translations for different languages, using hooks provided by Backstage to fetch and display the correct translations based on user preferences, and configuring Backstage to manage and switch between different locales.
+Het implementeren van i18n in Backstage omvat het maken van lokalisatiebestanden die vertalingen voor verschillende talen bevatten, het gebruik van hooks die door Backstage worden geleverd om de juiste vertalingen op te halen en weer te geven op basis van gebruikersvoorkeuren, en het configureren van Backstage voor het beheren van en schakelen tussen verschillende lokalisaties.
 
-\subsection{Plugin Analytics}
+\subsection{Plugin analytics}
 
-Plugin analytics in Backstage provide insights into how plugins are used, helping teams to make data-driven decisions. Usage metrics track how often plugins are used, which features are most popular, and user engagement levels. Performance monitoring measures the performance of plugins to identify and address bottlenecks or issues. Error tracking logs and analyzes errors to improve plugin stability and reliability.
+Plugin analytics in Backstage bieden inzicht in hoe plugins worden gebruikt en helpen teams om datagestuurde beslissingen te nemen. Gebruiksmeting houdt bij hoe vaak plugins worden gebruikt, welke functies het populairst zijn en hoeveel gebruikers erbij betrokken zijn. Prestatiemonitoring meet de prestaties van plugins om knelpunten of problemen te identificeren en aan te pakken. Foutopsporing logt en analyseert fouten om de stabiliteit en betrouwbaarheid van plugins te verbeteren.
 
-Integrating analytics involves instrumenting plugins by adding instrumentation code to track specific events and metrics, collecting the data by sending it to an analytics service for storage and analysis, and visualizing insights by creating dashboards and reports to visualize the collected data and derive actionable insights.
+Het integreren van analytics houdt in dat plugins worden geïnstrueerd door instructie code toe te voegen om specifieke gebeurtenissen en statistieken te volgen. Deze gegevens worden verzameld en naar een analytics service gestuurd voor opslag en analyse. De inzichten worden gevisualiseerd door dashboards en rapporten.
 
 \subsection{Feature Flags}
 
-Feature flags in Backstage allow for controlled rollouts and experiments by enabling or disabling features dynamically. This provides several advantages. Gradual rollouts allow new features to be gradually introduced to a subset of users to monitor impact and catch issues early. A/B testing can be conducted to compare different implementations and choose the best one based on user feedback and performance. Instant rollbacks enable quick disabling of features that are causing problems without deploying new code.
+Feature flags in Backstage maken gecontroleerde rollouts en experimenten mogelijk door features dynamisch in of uit te schakelen. Dit biedt verschillende voordelen. Met geleidelijke uitrol kunnen nieuwe functies geleidelijk worden geïntroduceerd bij een subset van gebruikers om de impact te controleren en problemen vroegtijdig op te sporen. A/B-tests kunnen worden uitgevoerd om verschillende implementaties te vergelijken en de beste te kiezen op basis van feedback van gebruikers en prestaties. Met directe rollbacks kunnen functies die problemen veroorzaken snel worden uitgeschakeld zonder nieuwe code te implementeren.
 
-Implementing feature flags involves defining flags for new or experimental features, using conditional logic in the code to check the status of feature flags and alter behavior accordingly, and managing flags through a feature flag management service to control the status of flags and monitor their usage.
-
-\subsection{Conclusion}
-
-Backstage's plugin architecture is a powerful tool for extending the platform's functionality and tailoring it to meet the specific needs of an organization. From backend and frontend plugins to advanced features like the composability system, internationalization, analytics, and feature flags, Backstage provides a comprehensive framework for building and managing plugins. This flexibility makes it an excellent choice for international companies looking to create a cohesive and efficient developer portal.
+Het implementeren van feature flags omvat het definiëren van flags voor nieuwe of experimentele features. Het gebruik van voorwaardelijke logica in de code om de status van feature flags te controleren en het gedrag overeenkomstig aan te passen. Het beheren van flags via een feature flag management service om de status van flags te controleren en het gebruik ervan te monitoren.
